@@ -1,7 +1,13 @@
-import React from "react";
+import Products from "../components/products/Products";
 
 const HomePage = () => {
-  return <></>;
+  return (
+    <>
+      <section className="text-gray-600 body-font">
+        <Products />
+      </section>
+    </>
+  );
 };
 
 export default HomePage;
