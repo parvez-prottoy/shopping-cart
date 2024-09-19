@@ -1,6 +1,6 @@
 const Navigation = () => {
   return (
-    <header className="fixed w-full z-10 text-gray-600 body-font border-b shadow-sm">
+    <header className="fixed w-full bg-slate-200 z-10 text-gray-600 body-font border-b shadow-sm">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a className="flex font-monospace text-xl font-extrabold items-center text-gray-900 mb-4 md:mb-0">
           Shopping Cart

@@ -1,10 +1,16 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const productAPI = createApi({
+const productsSlice = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "https://fakestoreapi.com",
   }),
-  endpoints: (builder) => ({}),
+  tagTypes: ["Products"],
+  endpoints: (builder) => ({
+    getProducts: builder.query({
+      query: () => "/products",
+      providesTags: "Products",
+    }),
+  }),
 });
-
-export default productAPI;
+export const { useGetProductsQuery } = productsSlice;
+export default productsSlice;
