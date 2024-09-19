@@ -1,12 +1,15 @@
-import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline text-center">
-        Shopping cart!
-      </h1>
-    </div>
+    <Router>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 };
 
